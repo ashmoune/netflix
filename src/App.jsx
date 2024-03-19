@@ -7,6 +7,9 @@ function App() {
   const tabData = data;
 
   const tabMadeWithMap = tabData.map((elem) => {
+    {
+      elem.images;
+    }
     console.log(elem.images);
   });
   return <p>{tabMadeWithMap} </p>;
