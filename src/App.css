@@ -1,0 +1,41 @@
+body {
+  background-color: black;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  height: 100px;
+  margin-left: 50px;
+}
+
+.title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.movies-list {
+  display: flex;
+  /* scroll horizontal */
+  overflow-x: auto;
+  /* overflow: hidden; */
+}
+
+.movies-list img {
+  width: 220px;
+}
+.movies-list h2 img {
+  width: 220px;
+  height: 123px;
+}
+
+/* dissimuler la scroolbar horizontal sous chaque liste */
+.movies-list::-webkit-scrollbar {
+  display: none;
+}
+
+/* .container {
+  margin: 0 0 0 50px;
+  padding-bottom: 40px;
+} */

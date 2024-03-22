@@ -1,18 +1,29 @@
-import React from "react";
-
 import "./App.css";
-import data from "./assets/movies_rnexgr.json";
+// import du JSON
+import MoviesList from "./assets/movies_rnexgr.json";
+import Logo from "./assets/netflix.png";
 
-function App() {
-  const tabData = data;
+// // import du composant Section
+import Section from "./components/Section";
 
-  const tabMadeWithMap = tabData.map((elem) => {
-    {
-      elem.images;
-    }
-    console.log(elem.images);
-  });
-  return <p>{tabMadeWithMap} </p>;
-}
+const App = () => {
+  return (
+    <>
+      <header>
+        <a href="https://www.netflix.com/fr/">
+          <img className="logo" src={Logo} alt="logo" />
+        </a>
+      </header>
+      {/* itération sur la liste de films */}
+      {MoviesList.map((type) => {
+        return (
+          // Transmet les données d'une catégorie à un composant section
+          <Section elem={type} key={type.category}></Section>
+        );
+        // console.log(elem);
+      })}
+    </>
+  );
+};
 
 export default App;
