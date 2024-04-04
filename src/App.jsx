@@ -3,7 +3,7 @@ import "./App.css";
 import MoviesList from "./assets/movies_rnexgr.json";
 import Logo from "./assets/netflix.png";
 
-// // import du composant Section
+// // import du composant 
 import Section from "./components/Section";
 
 const App = () => {
